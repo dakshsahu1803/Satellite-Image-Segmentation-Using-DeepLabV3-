@@ -1,3 +1,10 @@
+# ⚠️ Important Note  
+Due to GitHub rendering issues, the Jupyter Notebook (`.ipynb`) may not open directly here.  
+👉 Please use **Google Colab** to view and run the project:  
+[🔗 Open in Colab](https://colab.research.google.com/drive/1IPbDKSCkWYJ5_zv52X4rivcqjSEuhAnI?usp=sharing)
+
+---
+
 # 🛰️ Satellite Land Cover Segmentation using DeepLabV3+ & Google Earth Engine
 
 This project focuses on semantic segmentation of satellite imagery to classify land cover types such as buildings, vegetation, roads, and water using **DeepLabV3+** with a **ResNet-101** backbone. The data is collected and preprocessed through **Google Earth Engine (GEE)** and integrated with **PyTorch** and **Albumentations** for model training and augmentation.
@@ -18,32 +25,37 @@ The goal is to build a robust, pixel-wise segmentation model to support:
 
 ## 📦 Dataset & Preprocessing
 
-- **Source**: Landsat-8 Satellite Imagery via Google Earth Engine (GEE)
-- **Region**: Rectangle bounding box over Prayagraj (Lat: 25.3–25.6, Lon: 81.8–82.0)
-- **Classes**: Urban/Buildings, Vegetation, Roads, Water
-- **Preprocessing**:
-  - Mask creation with GEE
-  - Data export and resizing
-  - Label encoding and augmentation using Albumentations
+- **Source**: Landsat-8 Satellite Imagery via Google Earth Engine (GEE)  
+- **Region**: Rectangle bounding box over Prayagraj (Lat: 25.3–25.6, Lon: 81.8–82.0)  
+- **Classes**: Urban/Buildings, Vegetation, Roads, Water  
+- **Preprocessing**:  
+  - Mask creation with GEE  
+  - Data export and resizing  
+  - Label encoding and augmentation using Albumentations  
 
 ---
+
 ## 🧰 Tech Stack
 
-- **Deep Learning**: PyTorch, DeepLabV3+, ResNet-101
-- **Data Handling**: OpenCV, NumPy, Rasterio
-- **Augmentation**: Albumentations
-- **Visualization**: Matplotlib, Pillow
-- **Satellite Data**: Google Earth Engine (Python API), geemap
+- **Deep Learning**: PyTorch, DeepLabV3+, ResNet-101  
+- **Data Handling**: OpenCV, NumPy, Rasterio  
+- **Augmentation**: Albumentations  
+- **Visualization**: Matplotlib, Pillow  
+- **Satellite Data**: Google Earth Engine (Python API), geemap  
 
 ---
+
 ## 🛠️ Model Architecture
-- Encoder: ResNet-101
-- Decoder: ASPP + DeepLabV3+
-- Optimizer: Adam
-- Loss Function: BCE + Dice Loss
-- Batch Size: 4
-- Epochs: 25
+
+- Encoder: ResNet-101  
+- Decoder: ASPP + DeepLabV3+  
+- Optimizer: Adam  
+- Loss Function: BCE + Dice Loss  
+- Batch Size: 4  
+- Epochs: 25  
+
 ---
+
 ## 📊 Results
 
 | Metric         | Value     |
