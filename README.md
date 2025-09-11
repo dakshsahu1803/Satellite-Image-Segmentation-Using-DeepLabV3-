@@ -21,7 +21,7 @@ The goal is to build a robust, pixel-wise segmentation model to support:
 - Environmental monitoring
 - Smart infrastructure development
 
----
+--
 
 ## 📦 Dataset & Preprocessing
 
